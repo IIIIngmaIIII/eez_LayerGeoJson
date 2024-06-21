@@ -1,15 +1,15 @@
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-  <name>EEZ Example</name>
+<kml xmlns="http://www.opengis.net/kml/2.2"> <Document>
+    <name>EEZ Example</name>
     <Style id="eezStyle">
       <LineStyle>
-        <color>ff516066</color> <!-- strokeColor: argb(255, 81, 95, 102) -->
+        <color>ff516066</color>
         <width>0.5</width>
       </LineStyle>
       <PolyStyle>
-        <color>7f43ace6</color> <!-- fillColor: argb(100, 67, 172, 230) -->
+        <color>7f43ace6</color>
       </PolyStyle>
     </Style>
-<Placemark>
+    <Placemark>
 <ExtendedData>
   <Data name="MRGID"><value>8444</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (American Samoa)</value></Data>

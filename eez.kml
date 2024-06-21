@@ -1233,54 +1233,6 @@
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
-  <Data name="MRGID"><value>8450</value></Data>
-  <Data name="GEONAME"><value>Kiribati Exclusive Economic Zone (Phoenix Group)</value></Data>
-  <Data name="MRGID_TER1"><value>8658</value></Data>
-  <Data name="POL_TYPE"><value>200NM</value></Data>
-  <Data name="MRGID_SOV1"><value>2116</value></Data>
-  <Data name="TERRITORY1"><value>Phoenix Group</value></Data>
-  <Data name="ISO_TER1"><value>KIR</value></Data>
-  <Data name="SOVEREIGN1"><value>Kiribati</value></Data>
-  <Data name="MRGID_TER2"><value>null</value></Data>
-  <Data name="MRGID_SOV2"><value>null</value></Data>
-  <Data name="TERRITORY2"><value></value></Data>
-  <Data name="ISO_TER2"><value></value></Data>
-  <Data name="SOVEREIGN2"><value></value></Data>
-  <Data name="MRGID_TER3"><value>null</value></Data>
-  <Data name="MRGID_SOV3"><value>null</value></Data>
-  <Data name="TERRITORY3"><value></value></Data>
-  <Data name="ISO_TER3"><value></value></Data>
-  <Data name="SOVEREIGN3"><value></value></Data>
-  <Data name="X_1"><value>-172.45397</value></Data>
-  <Data name="Y_1"><value>-3.73181</value></Data>
-  <Data name="MRGID_EEZ"><value>8450</value></Data>
-  <Data name="AREA_KM2"><value>745782</value></Data>
-  <Data name="ISO_SOV1"><value>KIR</value></Data>
-  <Data name="ISO_SOV2"><value></value></Data>
-  <Data name="ISO_SOV3"><value></value></Data>
-  <Data name="UN_SOV1"><value>296</value></Data>
-  <Data name="UN_SOV2"><value>null</value></Data>
-  <Data name="UN_SOV3"><value>null</value></Data>
-  <Data name="UN_TER1"><value>296</value></Data>
-  <Data name="UN_TER2"><value>null</value></Data>
-  <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
-  <Polygon>
-<outerBoundaryIs>
-  <LinearRing><coordinates>-168.90765831947581,-6.879869609994259
--173.21920833359758,-6.466427777819504
--175.79978029132724,-7.784149854132352
--177.69508055552308,-5.7876583337649095
--177.45296666682222,-3.014830555520419
--173.75483611125054,-0.7297499998967396
--173.14298275041847,0.26524746882104466
--170.3710361115272,0.30599166698200975
--168.8199277775447,-0.645238888763572
--167.83491666677043,-2.0232777779468734
--167.45515277787825,-4.468369444194252
--168.90765831947581,-6.879869609994259</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
-<Placemark>
-    <styleUrl>#eezStyle</styleUrl>
-<ExtendedData>
   <Data name="MRGID"><value>8466</value></Data>
   <Data name="GEONAME"><value>Argentinian Exclusive Economic Zone</value></Data>
   <Data name="MRGID_TER1"><value>2149</value></Data>

@@ -3,7 +3,7 @@
     <Style id="eezStyle">
       <LineStyle>
         <color>ff516066</color>
-        <width>0.5</width>
+        <width>0.2</width>
       </LineStyle>
       <PolyStyle>
         <color>7f43ace6</color>

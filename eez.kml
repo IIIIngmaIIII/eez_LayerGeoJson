@@ -1,6 +1,5 @@
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-<Document>
-    <name>EEZ Example</name>
+  <name>EEZ Example</name>
     <Style id="eezStyle">
       <LineStyle>
         <color>ff516066</color> <!-- strokeColor: argb(255, 81, 95, 102) -->

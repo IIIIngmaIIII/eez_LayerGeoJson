@@ -1,15 +1,19 @@
 <kml xmlns="http://www.opengis.net/kml/2.2"> <Document>
     <name>EEZ Example</name>
-    <Style id="eezStyle">
+   <Style id="eezStyle">
       <LineStyle>
-        <color>ff516066</color>
-        <width>0.2</width>
+        <color>ff516066</color> <!-- Color del borde en formato ABGR -->
+        <width>1.5</width> <!-- Ancho de la línea del borde -->
       </LineStyle>
       <PolyStyle>
-        <color>7f43ace6</color>
+        <color>7f43ace6</color> <!-- Color de relleno en formato ABGR -->
+        <fill>true</fill>
+        <outline>true</outline> 
       </PolyStyle>
     </Style>
     <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
+
 <ExtendedData>
   <Data name="MRGID"><value>8444</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (American Samoa)</value></Data>
@@ -57,6 +61,7 @@
 -165.2008333331916,-15.64638888933571
 -166.64112365867769,-17.55526875286155</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8379</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Ascension)</value></Data>
@@ -109,6 +114,8 @@
 -11.232723062918893,-6.572859781053921
 -10.933275854296966,-7.88745128135146</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
+
 <ExtendedData>
   <Data name="MRGID"><value>8446</value></Data>
   <Data name="GEONAME"><value>New Zealand Exclusive Economic Zone (Cook Islands)</value></Data>
@@ -173,6 +180,7 @@
 -160.5579695384631,-6.686874762560038
 -159.27578888884602,-5.800505555686755</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8389</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Falkland / Malvinas Islands: United Kingdom / Argentina</value></Data>
@@ -242,6 +250,7 @@
 -61.07920455914291,-52.01045644291038
 -60.64120912530072,-52.26041054730879</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8440</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (French Polynesia)</value></Data>
@@ -325,6 +334,7 @@
 -143.96337694598918,-24.237919892588835
 -142.23940583231317,-24.724733851885574</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8439</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Pitcairn)</value></Data>
@@ -375,6 +385,7 @@
 -132.32512770088263,-27.763739534851553
 -133.43269348461638,-26.584254071368235</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8380</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Saint Helena)</value></Data>
@@ -427,6 +438,7 @@
 -2.49764947554263,-14.5424546651506
 -2.1688874124238566,-15.895744342926974</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8445</value></Data>
   <Data name="GEONAME"><value>Samoan Exclusive Economic Zone</value></Data>
@@ -478,6 +490,7 @@
 -171.4368705752168,-14.046990275480766
 -171.83087313148968,-13.792775749800995</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8448</value></Data>
   <Data name="GEONAME"><value>Tongan Exclusive Economic Zone</value></Data>
@@ -529,6 +542,7 @@
 -174.51139447157757,-14.154640220669492
 -171.84753245725693,-15.878383591829206</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8382</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Tristan da Cunha)</value></Data>
@@ -584,6 +598,7 @@
 -14.286550690502935,-34.13667794485299
 -12.290532704122427,-33.72222962707379</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8465</value></Data>
   <Data name="GEONAME"><value>Chilean Exclusive Economic Zone</value></Data>
@@ -955,6 +970,7 @@
 -75.59437584846626,-48.44550406895753
 -75.53505325320475,-48.771749734562285</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8447</value></Data>
   <Data name="GEONAME"><value>New Zealand Exclusive Economic Zone (Niue)</value></Data>
@@ -1001,6 +1017,7 @@
 -169.32972222190273,-16.636666666533316
 -166.64112365867769,-17.55526875286155</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48961</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Uruguay / Argentina</value></Data>
@@ -1044,6 +1061,7 @@
 -54.95396112576037,-34.9704528336932
 -54.949973525446325,-34.972989125050404</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48962</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Peru / Ecuador</value></Data>
@@ -1085,6 +1103,7 @@
 -84.48890786090891,-3.385642632301554
 -84.48443355476448,-3.224727906267816</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8467</value></Data>
   <Data name="GEONAME"><value>Uruguayan Exclusive Economic Zone</value></Data>
@@ -1139,6 +1158,7 @@
 -56.31713795645143,-34.89792227769075
 -54.95396112576037,-34.9704528336932</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8449</value></Data>
   <Data name="GEONAME"><value>New Zealand Exclusive Economic Zone (Tokelau)</value></Data>
@@ -1184,6 +1204,7 @@
 -173.21920833359758,-6.466427777819504
 -168.90765831947581,-6.879869609994259</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8432</value></Data>
   <Data name="GEONAME"><value>Peruvian Exclusive Economic Zone</value></Data>
@@ -1245,6 +1266,7 @@
 -80.42857371799909,-3.3921249995955236
 -80.22055232512952,-3.4387422796323364</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>22756</value></Data>
   <Data name="GEONAME"><value>Chilean Exclusive Economic Zone (Islas San Félix and San Ambrosio)</value></Data>
@@ -1297,6 +1319,7 @@
 -76.50038027363209,-24.969593525296176
 -76.1551337454257,-26.282527441987682</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21787</value></Data>
   <Data name="GEONAME"><value>Chilean Exclusive Economic Zone (Easter Island)</value></Data>
@@ -1350,6 +1373,7 @@
 -106.59627024725003,-23.316991586812676
 -105.20747910593025,-23.126328795653208</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8381</value></Data>
   <Data name="GEONAME"><value>Brazilian Exclusive Economic Zone (Trindade)</value></Data>
@@ -1401,6 +1425,7 @@
 -31.143563206476415,-17.610827387573778
 -28.483926295262194,-17.137428277093164</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8450</value></Data>
   <Data name="GEONAME"><value>Kiribati Exclusive Economic Zone (Phoenix Group)</value></Data>
@@ -1452,6 +1477,7 @@
 -167.45515277787825,-4.468369444194252
 -168.90765831947581,-6.879869609994259</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8466</value></Data>
   <Data name="GEONAME"><value>Argentinian Exclusive Economic Zone</value></Data>
@@ -1561,6 +1587,7 @@
 -58.00210919798104,-31.544201162253785
 -58.08797533379459,-31.824699850517618</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8386</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Amsterdam and Saint Paul Islands)</value></Data>
@@ -1613,6 +1640,7 @@
 81.34081934403778,-36.355044791184056
 81.80804242511832,-37.78852190136459</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8309</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone (Christmas Island)</value></Data>
@@ -1661,6 +1689,7 @@
 106.8229316696613,-9.132460400327105
 109.02469639127995,-11.169380315686482</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8308</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone (Cocos Islands)</value></Data>
@@ -1713,6 +1742,7 @@
 99.87555299507468,-10.3508505678993
 100.3145089875998,-11.821510917894472</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8334</value></Data>
   <Data name="GEONAME"><value>Comoran Exclusive Economic Zone</value></Data>
@@ -1756,6 +1786,7 @@
 43.176069148518735,-8.105182064398107
 45.76749999996312,-11.139722222218083</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8385</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Crozet Islands)</value></Data>
@@ -1807,6 +1838,7 @@
 56.3706735989075,-44.682795396890015
 57.074177743807866,-45.93675318121427</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48944</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Mayotte: France / Comores</value></Data>
@@ -1848,6 +1880,7 @@
 45.76749999996312,-11.139722222218083
 46.68597898959902,-12.809391776604286</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48946</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Ile Tromelin: France / Madagascar / Republic of Mauritius</value></Data>
@@ -1891,6 +1924,7 @@
 56.80095230640413,-17.387853887047157
 55.50555555544477,-18.286388888736084</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8388</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone (Heard and McDonald Islands)</value></Data>
@@ -1942,6 +1976,7 @@
 73.25132346150852,-52.98698997480735
 73.50805604485086,-53.19458830320749</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8387</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Kerguélen)</value></Data>
@@ -2002,6 +2037,7 @@
 69.2824629549016,-49.46806526200223
 70.07886707795356,-49.735725879845425</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8348</value></Data>
   <Data name="GEONAME"><value>Madagascan Exclusive Economic Zone</value></Data>
@@ -2124,6 +2160,7 @@
 50.4621976613935,-15.455757737229845
 49.72632145896833,-12.753305315687626</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8396</value></Data>
   <Data name="GEONAME"><value>South African Exclusive Economic Zone</value></Data>
@@ -2190,6 +2227,7 @@
 32.89038693890697,-26.86206471931122
 36.53068583960143,-27.716048903822923</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8312</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (New Caledonia)</value></Data>
@@ -2250,6 +2288,7 @@
 163.99483199699935,-20.082632211007606
 165.33962696201482,-21.59665714161369</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8310</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone (Norfolk Island)</value></Data>
@@ -2295,6 +2334,7 @@
 165.86007594534883,-26.201133848747958
 169.42984157633842,-25.930607390991284</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8343</value></Data>
   <Data name="GEONAME"><value>Mauritian Exclusive Economic Zone</value></Data>
@@ -2360,6 +2400,7 @@
 57.65354587843976,-19.976730151275348
 57.51543778772387,-20.529384271666686</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8338</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Réunion)</value></Data>
@@ -2409,6 +2450,7 @@
 55.28305363691587,-20.92709326774016
 55.652764916567975,-21.38658893133409</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8313</value></Data>
   <Data name="GEONAME"><value>Vanuatuan Exclusive Economic Zone</value></Data>
@@ -2477,6 +2519,7 @@
 168.55697036000015,-17.787825940000005
 168.3125398200002,-17.521569609999972</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8395</value></Data>
   <Data name="GEONAME"><value>Namibian Exclusive Economic Zone</value></Data>
@@ -2525,6 +2568,7 @@
 8.263540876910042,-17.249999999600306
 11.789649009994065,-17.272144555826458</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21791</value></Data>
   <Data name="GEONAME"><value>Timorese Exclusive Economic Zone (Oecusse)</value></Data>
@@ -2565,6 +2609,7 @@
 124.43580531176636,-8.813668938170807
 124.46548140054702,-9.172798037399446</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8394</value></Data>
   <Data name="GEONAME"><value>Congolese (Republic of) Exclusive Economic Zone</value></Data>
@@ -2608,6 +2653,7 @@
 11.89956653097073,-4.243610978263973
 12.009580135514966,-5.030147075227319</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8478</value></Data>
   <Data name="GEONAME"><value>Angolan Exclusive Economic Zone</value></Data>
@@ -2665,6 +2711,7 @@
 12.009580135514966,-5.030147075227319
 12.202413352294741,-5.773047655524664</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8347</value></Data>
   <Data name="GEONAME"><value>Mozambican Exclusive Economic Zone</value></Data>
@@ -2746,6 +2793,7 @@
 40.449825048788085,-10.473694205622976
 39.78361356241666,-10.909701943489779</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8349</value></Data>
   <Data name="GEONAME"><value>Kenyan Exclusive Economic Zone</value></Data>
@@ -2788,6 +2836,7 @@
 40.18806683981283,-2.73882651333295
 41.56621634920515,-1.654068112253578</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21798</value></Data>
   <Data name="GEONAME"><value>Joint regime area Torres Strait Treaty: Papua New Guinea / Australia</value></Data>
@@ -2830,6 +2879,7 @@
 142.0583333,-9.756666667
 142.05920300571415,-9.266297937100092</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8384</value></Data>
   <Data name="GEONAME"><value>South African Exclusive Economic Zone (Prince Edward Islands)</value></Data>
@@ -2882,6 +2932,7 @@
 42.36222556016148,-45.26850634379262
 42.84296620162925,-46.598199363309824</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8479</value></Data>
   <Data name="GEONAME"><value>Tanzanian Exclusive Economic Zone</value></Data>
@@ -2933,6 +2984,7 @@
 43.215184291122824,-4.683414166498466
 43.27404889410823,-7.736297752870456</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8314</value></Data>
   <Data name="GEONAME"><value>Solomon Islands Exclusive Economic Zone</value></Data>
@@ -3026,6 +3078,7 @@
 162.37694990671287,-10.843847751172746
 161.37941515458579,-10.194870829325282</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8337</value></Data>
   <Data name="GEONAME"><value>Seychellois Exclusive Economic Zone</value></Data>
@@ -3088,6 +3141,7 @@
 43.176069148518735,-8.105182064398107
 43.27404889410823,-7.736297752870456</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48945</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Glorioso Islands: France / Madagascar</value></Data>
@@ -3129,6 +3183,7 @@
 46.9111111111894,-10.650277777397164
 48.48650136884365,-11.021167714818105</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8341</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Europa Island)</value></Data>
@@ -3170,6 +3225,7 @@
 41.682777909473344,-23.701023637330778
 40.33437141730772,-25.750944431739995</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48948</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Matthew and Hunter Islands: France / Vanuatu</value></Data>
@@ -3211,6 +3267,7 @@
 172.66360262765969,-25.704441201899854
 170.55349191960877,-25.61528434378836</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8477</value></Data>
   <Data name="GEONAME"><value>Congolese (Democratic Republic of) Exclusive Economic Zone</value></Data>
@@ -3255,6 +3312,7 @@
 13.636980653034868,-5.528277516793821
 13.431981324878564,-5.859551310844267</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8323</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone</value></Data>
@@ -3726,6 +3784,7 @@
 143.92534308621453,-9.10982765971869
 143.93846330184,-9.155183889724697</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8311</value></Data>
   <Data name="GEONAME"><value>Australian Exclusive Economic Zone (Macquarie Island)</value></Data>
@@ -3774,6 +3833,7 @@
 155.5048657000001,-51.77434422199991
 158.04802816300014,-51.07766091499991</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8339</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Juan de Nova Island)</value></Data>
@@ -3815,6 +3875,7 @@
 43.274185025318815,-17.258712873500087
 41.17400076292515,-19.251737868008107</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8340</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Bassas da India)</value></Data>
@@ -3857,6 +3918,7 @@
 40.9375657270775,-19.10531746502876
 41.17400076292515,-19.251737868008107</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8758</value></Data>
   <Data name="GEONAME"><value>Timorese Exclusive Economic Zone</value></Data>
@@ -3905,6 +3967,7 @@
 124.99623553534175,-8.533780144937651
 125.67109315782338,-8.11890576648787</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8412</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Anguilla)</value></Data>
@@ -3948,6 +4011,7 @@
 -63.25764052708834,21.939841734208755
 -60.73666931233859,20.922025380467232</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8414</value></Data>
   <Data name="GEONAME"><value>Antiguan and Barbudan Exclusive Economic Zone</value></Data>
@@ -3991,6 +4055,7 @@
 -59.26993187229647,20.03833999776583
 -58.36828209594171,18.541532550087297</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26519</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Aruba)</value></Data>
@@ -4031,6 +4096,7 @@
 -69.61932072117409,15.283109387588354
 -68.87016907294432,15.241854594014427</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8361</value></Data>
   <Data name="GEONAME"><value>Portuguese Exclusive Economic Zone (Azores)</value></Data>
@@ -4083,6 +4149,7 @@
 -31.39725318008996,43.05829275420734
 -28.49344599323797,42.41897068135205</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8404</value></Data>
   <Data name="GEONAME"><value>Bahamian Exclusive Economic Zone</value></Data>
@@ -4168,6 +4235,7 @@
 -78.99506151717503,26.704436302393617
 -78.70301151297053,26.487753749336377</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8418</value></Data>
   <Data name="GEONAME"><value>Barbadian Exclusive Economic Zone</value></Data>
@@ -4217,6 +4285,7 @@
 -56.222506433524785,11.97911734049329
 -57.07743991751914,10.693349318268517</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8429</value></Data>
   <Data name="GEONAME"><value>Mexican Exclusive Economic Zone</value></Data>
@@ -4387,6 +4456,7 @@
 -112.58188927157249,28.878022432489445
 -112.27875482997119,28.76846027412259</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26520</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Bonaire)</value></Data>
@@ -4428,6 +4498,7 @@
 -67.98972222190275,11.666666666233866
 -68.40522271015982,11.66666666623378</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8411</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (British Virgin Islands)</value></Data>
@@ -4471,6 +4542,7 @@
 -65.82185139747415,21.81825676054376
 -63.25764052708834,21.939841734208755</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8362</value></Data>
   <Data name="GEONAME"><value>Cape Verdean Exclusive Economic Zone</value></Data>
@@ -4521,6 +4593,7 @@
 -21.905752798752303,20.061208413037832
 -20.070596072350497,18.81626882154906</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8364</value></Data>
   <Data name="GEONAME"><value>Spanish Exclusive Economic Zone (Canary Islands)</value></Data>
@@ -4585,6 +4658,7 @@
 -13.918030738827326,28.25088596381613
 -13.865816474050831,28.73773384104399</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8407</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Cayman Islands)</value></Data>
@@ -4628,6 +4702,7 @@
 -79.17448853032124,20.164586769164174
 -78.72694300051896,19.35780662807366</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8401</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Clipperton Island)</value></Data>
@@ -4680,6 +4755,7 @@
 -106.07846505651705,11.616270379174736
 -105.8158804443269,10.33114868026749</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8423</value></Data>
   <Data name="GEONAME"><value>Panamanian Exclusive Economic Zone</value></Data>
@@ -4750,6 +4826,7 @@
 -77.04999999999973,9.450000000000145
 -77.3738521340683,8.6614252326887</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8424</value></Data>
   <Data name="GEONAME"><value>Costa Rican Exclusive Economic Zone</value></Data>
@@ -4816,6 +4893,7 @@
 -83.49624999999995,11.23436111111117
 -79.99999999999989,11.601707894500336</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26517</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Curaçao)</value></Data>
@@ -4858,6 +4936,7 @@
 -68.87016907294432,15.241854594014427
 -68.86222222177787,15.241111110989152</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8417</value></Data>
   <Data name="GEONAME"><value>Dominican Exclusive Economic Zone</value></Data>
@@ -4898,6 +4977,7 @@
 -61.442499999775066,15.787222221928204
 -57.9101827523364,16.366904331831265</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8409</value></Data>
   <Data name="GEONAME"><value>Dominican (Republic) Exclusive Economic Zone</value></Data>
@@ -4962,6 +5042,7 @@
 -67.22676122465046,23.25356230585578
 -65.82185139747415,21.81825676054376</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8430</value></Data>
   <Data name="GEONAME"><value>Guatemalan Exclusive Economic Zone</value></Data>
@@ -5012,6 +5093,7 @@
 -88.65876482223854,16.058027476686974
 -88.21344394448232,15.934257890689238</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8435</value></Data>
   <Data name="GEONAME"><value>Danish Exclusive Economic Zone (Faeroe)</value></Data>
@@ -5057,6 +5139,7 @@
 -4.737866666666706,60.40128333333331
 -9.01100000000003,59.9408333333333</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8370</value></Data>
   <Data name="GEONAME"><value>Gambian Exclusive Economic Zone</value></Data>
@@ -5102,6 +5185,7 @@
 -16.66730701920318,13.489375949041147
 -16.74694448669436,13.064166624413843</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8365</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Gibraltar: United Kingdom / Spain</value></Data>
@@ -5141,6 +5225,7 @@
 -4.967165531563779,36.075631994920855
 -5.351985753439578,36.1549317838749</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8419</value></Data>
   <Data name="GEONAME"><value>Grenadian Exclusive Economic Zone</value></Data>
@@ -5181,6 +5266,7 @@
 -63.267087345804185,13.35158612210195
 -60.78119118912181,12.062033006618094</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33177</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Guadeloupe)</value></Data>
@@ -5230,6 +5316,7 @@
 -61.18805980721419,16.254552841240738
 -61.457300543784726,16.499514221704075</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8390</value></Data>
   <Data name="GEONAME"><value>Sierra Leonean Exclusive Economic Zone</value></Data>
@@ -5278,6 +5365,7 @@
 -12.524368405277443,7.3839440344898435
 -11.445194120511871,6.939070635101842</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5680</value></Data>
   <Data name="GEONAME"><value>Icelandic Exclusive Economic Zone</value></Data>
@@ -5390,6 +5478,7 @@
 -15.372531413793467,66.14567744735643
 -16.20420742053585,66.53028476283163</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8459</value></Data>
   <Data name="GEONAME"><value>Jamaican Exclusive Economic Zone</value></Data>
@@ -5444,6 +5533,7 @@
 -76.18180954477444,17.911679029863464
 -77.83604907960117,18.52504205674569</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8363</value></Data>
   <Data name="GEONAME"><value>Portuguese Exclusive Economic Zone (Madeira)</value></Data>
@@ -5494,6 +5584,7 @@
 -13.612423836090983,35.63011132647662
 -12.590454221584821,34.41549019421754</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8369</value></Data>
   <Data name="GEONAME"><value>Mauritanian Exclusive Economic Zone</value></Data>
@@ -5540,6 +5631,7 @@
 -16.020222306014347,17.98146092847942
 -16.509283065860416,16.067174434453037</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8415</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Montserrat)</value></Data>
@@ -5580,6 +5672,7 @@
 -62.75095982523558,16.611630439393437
 -61.83155233317359,16.6848727466801</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48951</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Navassa Island: United States / Haiti / Jamaica</value></Data>
@@ -5619,6 +5712,7 @@
 -74.96492916085182,19.163579599718943
 -74.85110198386928,17.333679761412014</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8443</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Palmyra Atoll)</value></Data>
@@ -5664,6 +5758,7 @@
 -160.46252013159855,9.183870466349177
 -159.33273283305346,7.877488877010165</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33179</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Puerto Rico)</value></Data>
@@ -5714,6 +5809,7 @@
 -65.58914780632611,18.22853004912247
 -67.09980094475776,18.515264153517975</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26518</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Saba)</value></Data>
@@ -5758,6 +5854,7 @@
 -63.63404375741328,17.947997068809727
 -63.286352771063264,17.87369815074925</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48952</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Saint-Barthélemy)</value></Data>
@@ -5801,6 +5898,7 @@
 -62.22634440696859,18.312091422181496
 -62.42165108492938,17.661734249636012</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26526</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Sint-Eustatius)</value></Data>
@@ -5840,6 +5938,7 @@
 -63.01974487532564,17.736182632322766
 -62.76955066273274,17.643935005296427</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8413</value></Data>
   <Data name="GEONAME"><value>Kittitian and Nevisian Exclusive Economic Zone</value></Data>
@@ -5882,6 +5981,7 @@
 -62.42165108492938,17.661734249636012
 -62.75095982523558,16.611630439393437</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8416</value></Data>
   <Data name="GEONAME"><value>Saint Lucian Exclusive Economic Zone</value></Data>
@@ -5922,6 +6022,7 @@
 -62.813888888960776,14.080555555494684
 -59.9997222224024,14.114166666558745</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8495</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Collectivity of Saint Martin)</value></Data>
@@ -5964,6 +6065,7 @@
 -63.63404375741328,17.947997068809727
 -62.73944444440545,18.155833333541565</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8494</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Saint-Pierre and Miquelon)</value></Data>
@@ -6007,6 +6109,7 @@
 -57.096777777672145,46.98294444433091
 -56.25500000024954,47.30527777754767</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8421</value></Data>
   <Data name="GEONAME"><value>Saint Vincentian Exclusive Economic Zone</value></Data>
@@ -6048,6 +6151,7 @@
 -62.86401493424154,14.080324540345373
 -60.38157809805057,13.243237630312578</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21803</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone (Sint-Maarten)</value></Data>
@@ -6089,6 +6193,7 @@
 -63.13974159223176,18.05582933533657
 -63.01456916363591,18.05185830601617</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8420</value></Data>
   <Data name="GEONAME"><value>Trinidadian and Tobagonian Exclusive Economic Zone</value></Data>
@@ -6140,6 +6245,7 @@
 -60.99066603211145,10.139588952068536
 -60.939633369484255,10.844119548977957</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8405</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Turks and Caicos Islands)</value></Data>
@@ -6190,6 +6296,7 @@
 -70.51048641886862,25.0320178909885
 -68.82691987355292,24.089310214395056</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33180</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (United States Virgin Islands)</value></Data>
@@ -6234,6 +6341,7 @@
 -64.63416666665819,18.050833333391708
 -63.89909378544968,17.96447758057603</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5688</value></Data>
   <Data name="GEONAME"><value>Portuguese Exclusive Economic Zone</value></Data>
@@ -6292,6 +6400,7 @@
 -7.406433701753798,37.17128515198823
 -7.480924248255292,37.49540436252141</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8428</value></Data>
   <Data name="GEONAME"><value>Salvadoran Exclusive Economic Zone</value></Data>
@@ -6336,6 +6445,7 @@
 -87.89852941020388,13.152991771852882
 -87.82179033735406,13.41156053519073</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8457</value></Data>
   <Data name="GEONAME"><value>Belizean Exclusive Economic Zone</value></Data>
@@ -6382,6 +6492,7 @@
 -87.22301685464407,16.592963271937492
 -88.0506811053487,16.23053213824761</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8406</value></Data>
   <Data name="GEONAME"><value>Cuban Exclusive Economic Zone</value></Data>
@@ -6465,6 +6576,7 @@
 -83.17386960979451,21.576978326088863
 -82.88476681703477,21.437564849638022</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8408</value></Data>
   <Data name="GEONAME"><value>Haitian Exclusive Economic Zone</value></Data>
@@ -6520,6 +6632,7 @@
 -72.42314527143694,20.722519391057205
 -72.20365917363586,20.59366157130549</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33178</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Martinique)</value></Data>
@@ -6562,6 +6675,7 @@
 -57.53364581385722,16.485863351158216
 -57.55229049590935,16.019233498927193</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48964</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Senegal / Guinea-Bissau</value></Data>
@@ -6602,6 +6716,7 @@
 -16.897455407240926,12.24029272762742
 -19.246278349166232,9.339576752565264</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48965</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Venezuela / Netherlands (Aruba) / Dominican Republic</value></Data>
@@ -6636,6 +6751,7 @@
   <Data name="UN_TER3"><value>214</value></Data></ExtendedData>
   <MultiGeometry></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48966</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Spain / France</value></Data>
@@ -6676,6 +6792,7 @@
 -5.666666666333299,45.00833333311698
 -5.666666666366524,45.29871612373131</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48967</value></Data>
   <Data name="GEONAME"><value>Joint regime area: United Kingdom / Denmark (Faeroe Islands)</value></Data>
@@ -6715,6 +6832,7 @@
 -4.736111110738818,60.40194444478038
 -5.534166666957731,60.02638888933586</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48943</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Canada / United States</value></Data>
@@ -6754,6 +6872,7 @@
 -140.99999999969032,73.39761270989757
 -137.5822802666807,72.9477777716356</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48968</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Costa Rica / Ecuador (Galapagos)</value></Data>
@@ -6798,6 +6917,7 @@
 -89.30000000039948,3.558888888511774
 -86.9929318463339,2.148090542251836</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8425</value></Data>
   <Data name="GEONAME"><value>Nicaraguan Exclusive Economic Zone</value></Data>
@@ -6874,6 +6994,7 @@
 -80.02778557179315,14.378909195308026
 -80.2551643474423,14.673306931790862</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8460</value></Data>
   <Data name="GEONAME"><value>Guyanese Exclusive Economic Zone</value></Data>
@@ -6924,6 +7045,7 @@
 -58.49230647066699,7.357941151063457
 -59.80875312035997,8.304830724258636</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48969</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Barbados / Guyana</value></Data>
@@ -6963,6 +7085,7 @@
 -57.0775228859105,10.69335113348609
 -57.15534944914802,10.695053855963863</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48970</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Dominican Republic / Colombia</value></Data>
@@ -7006,6 +7129,7 @@
 -71.67073829123697,15.011675001316291
 -71.67075472651703,15.010376604430377</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48971</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Colombia / Dominican Republic / Venezuela</value></Data>
@@ -7047,6 +7171,7 @@
 -70.41768040382735,15.177474009218244
 -71.40527777774696,14.96444444475543</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5681</value></Data>
   <Data name="GEONAME"><value>Irish Exclusive Economic Zone</value></Data>
@@ -7127,6 +7252,7 @@
 -9.408947999999953,48.5
 -10.809371499999997,48.18018783166673</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21788</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Guernsey)</value></Data>
@@ -7168,6 +7294,7 @@
 -2.0547129870169076,49.92198640071767
 -2.0988889001827413,49.45972219986785</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21789</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Jersey)</value></Data>
@@ -7208,6 +7335,7 @@
 -2.5266666995659524,48.92683329999616
 -2.5605555996418925,49.22000000023609</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8371</value></Data>
   <Data name="GEONAME"><value>Senegalese Exclusive Economic Zone</value></Data>
@@ -7276,6 +7404,7 @@
 -16.57687675925473,14.03634214437443
 -16.5080179868404,13.593264370954259</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8471</value></Data>
   <Data name="GEONAME"><value>Bissau-Guinean Exclusive Economic Zone</value></Data>
@@ -7332,6 +7461,7 @@
 -14.952699542349592,11.320645212806696
 -14.95969665007999,10.984888553763795</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8472</value></Data>
   <Data name="GEONAME"><value>Guinean Exclusive Economic Zone</value></Data>
@@ -7377,6 +7507,7 @@
 -13.676823616016748,9.942767143089398
 -13.302130460951815,9.03765523470149</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8473</value></Data>
   <Data name="GEONAME"><value>Ivorian Exclusive Economic Zone</value></Data>
@@ -7425,6 +7556,7 @@
 -4.020343542420221,5.266787529021457
 -2.943180918764085,5.114194750587373</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33185</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Guyana / Trinidad and Tobago / Venezuela</value></Data>
@@ -7465,6 +7597,7 @@
 -57.11750000021627,10.976499999783812
 -57.14637683727176,10.744991162148182</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8391</value></Data>
   <Data name="GEONAME"><value>Liberian Exclusive Economic Zone</value></Data>
@@ -7508,6 +7641,7 @@
 -7.61695075017667,4.354932427489686
 -7.585396647636912,4.863424300990673</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21792</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Jamaica / Colombia</value></Data>
@@ -7552,6 +7686,7 @@
 -79.94220554724814,15.979815904280642
 -78.43055555529446,15.892976190299066</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48972</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Honduras / United Kingdom (Cayman Islands)</value></Data>
@@ -7592,6 +7727,7 @@
 -83.63333333306676,18.95000000000003
 -83.93333333336633,18.416666666233866</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48973</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Iceland / Denmark (Faeroe Islands)</value></Data>
@@ -7626,6 +7762,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8433</value></Data>
   <Data name="GEONAME"><value>Venezuelan Exclusive Economic Zone</value></Data>
@@ -7741,6 +7878,7 @@
 -60.785308360991735,9.343742012983611
 -61.67179393744016,9.898679256642467</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8427</value></Data>
   <Data name="GEONAME"><value>Honduran Exclusive Economic Zone</value></Data>
@@ -7804,6 +7942,7 @@
 -84.19999999979993,18.416666666233866
 -83.93333333336633,18.416666666233866</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48974</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Ecuador / Colombia</value></Data>
@@ -7846,6 +7985,7 @@
 -83.97583333333313,1.6244444444443928
 -79.12861111099329,1.4566666668119694</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48975</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Iceland / Norway (Jan Mayen)</value></Data>
@@ -7888,6 +8028,7 @@
 -6.50000000039941,68.00000000000011
 -7.044503247490638,68.00000000000173</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8493</value></Data>
   <Data name="GEONAME"><value>Canadian Exclusive Economic Zone</value></Data>
@@ -9792,6 +9933,7 @@
 -136.00733995417534,69.19887864553345
 -135.80729806415422,69.0612156391906</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8368</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Western Sahara: Western Sahara / Morocco</value></Data>
@@ -9841,6 +9983,7 @@
 -16.951411246931116,21.840997338057065
 -17.050135655510132,20.769611131984135</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8461</value></Data>
   <Data name="GEONAME"><value>Surinamese Exclusive Economic Zone</value></Data>
@@ -9889,6 +10032,7 @@
 -55.93483333333333,9.000500000000038
 -55.463575928493114,9.351574523672284</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8462</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (French Guiana)</value></Data>
@@ -9935,6 +10079,7 @@
 -54.38300429990841,5.1015677618428725
 -52.387904020663626,8.81257284804449</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48982</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: United States (Puerto Rico) / Dominican Republic</value></Data>
@@ -9975,6 +10120,7 @@
 -66.8247775209999,21.85425094700011
 -65.8420654889058,21.809869917067516</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8452</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Johnston Atoll)</value></Data>
@@ -10027,6 +10173,7 @@
 -166.23790306699993,18.06468323800013
 -165.98459199599995,16.79032454900012</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8426</value></Data>
   <Data name="GEONAME"><value>Colombian Exclusive Economic Zone</value></Data>
@@ -10125,6 +10272,7 @@
 -79.00751745666489,1.656789660614919
 -78.76237285102599,1.3938747643095013</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>62596</value></Data>
   <Data name="GEONAME"><value>Colombian Exclusive Economic Zone (Serrana Bank)</value></Data>
@@ -10164,6 +10312,7 @@
 -80.42343112361647,14.088179953838036
 -80.2551643474423,14.673306931790862</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>62598</value></Data>
   <Data name="GEONAME"><value>Colombian Exclusive Economic Zone (Quitasueño Bank)</value></Data>
@@ -10203,6 +10352,7 @@
 -81.04399840088098,13.94665616852852
 -81.38025453741119,14.474663144607334</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48984</value></Data>
   <Data name="GEONAME"><value>Colombian Exclusive Economic Zone (Serranilla Bank)</value></Data>
@@ -10243,6 +10393,7 @@
 -79.65638888893565,15.740555555594469
 -80.0181944443178,15.67250000007509</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48985</value></Data>
   <Data name="GEONAME"><value>Colombian Exclusive Economic Zone (Bajo Nuevo Bank)</value></Data>
@@ -10282,6 +10433,7 @@
 -78.84083333329144,15.843611110864288
 -78.43055555529446,15.892976190299066</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8367</value></Data>
   <Data name="GEONAME"><value>Moroccan Exclusive Economic Zone</value></Data>
@@ -10349,6 +10501,7 @@
 -5.277466391871457,35.815591216735214
 -2.1217093645952048,35.88889044933512</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>49000</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Melilla: Spain / Morocco</value></Data>
@@ -10383,6 +10536,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>49001</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Alhucemas Islands: Spain / Morocco</value></Data>
@@ -10417,6 +10571,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48998</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Perejil Island: Spain / Morocco</value></Data>
@@ -10451,6 +10606,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>49002</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Ceuta: Spain / Morocco</value></Data>
@@ -10497,6 +10653,7 @@
 -5.379391072941047,35.91653010705656
 -5.381688833572497,35.91320800774383</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48999</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Peñón de Vélez de la Gomera: Spain / Morocco</value></Data>
@@ -10531,6 +10688,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48997</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Chafarinas Islands: Spain / Morocco</value></Data>
@@ -10565,6 +10723,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8360</value></Data>
   <Data name="GEONAME"><value>Emirati Exclusive Economic Zone</value></Data>
@@ -10619,6 +10778,7 @@
 51.83290517293605,23.985799550909235
 51.68368464458982,24.68506852102911</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8376</value></Data>
   <Data name="GEONAME"><value>Cypriote Exclusive Economic Zone</value></Data>
@@ -10673,6 +10833,7 @@
 33.90705442402262,35.25760960609847
 34.536921262306606,35.68046236054954</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48947</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Abu musa, Greater and Lesser Tunb: United Arab Emirates / Iran</value></Data>
@@ -10715,6 +10876,7 @@
 55.009135185541,26.3555677491525
 55.72806959773416,26.22887894041088</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48956</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Doumeira Islands: Eritrea / Djibouti</value></Data>
@@ -10754,6 +10916,7 @@
 43.25290245038801,12.861585298223105
 43.27297551271002,12.686389354285467</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8490</value></Data>
   <Data name="GEONAME"><value>Egyptian Exclusive Economic Zone</value></Data>
@@ -10820,6 +10983,7 @@
 32.97222222247754,32.88888888871139
 34.21707654025013,31.324393511151754</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8351</value></Data>
   <Data name="GEONAME"><value>Eritrean Exclusive Economic Zone</value></Data>
@@ -10871,6 +11035,7 @@
 40.426336050168885,15.56150841697989
 40.13935792462891,15.777039647162255</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5678</value></Data>
   <Data name="GEONAME"><value>Georgian Exclusive Economic Zone</value></Data>
@@ -10912,6 +11077,7 @@
 41.653905033990696,42.19716405837477
 41.54702794548385,41.52049160040724</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8469</value></Data>
   <Data name="GEONAME"><value>Iranian Exclusive Economic Zone</value></Data>
@@ -10996,6 +11162,7 @@
 49.08741104628274,37.64581167686737
 48.88314488592795,38.44405650800161</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8374</value></Data>
   <Data name="GEONAME"><value>Lebanese Exclusive Economic Zone</value></Data>
@@ -11037,6 +11204,7 @@
 35.10371446635009,33.09411430373206
 33.76240312812408,33.53658163802571</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8372</value></Data>
   <Data name="GEONAME"><value>Libyan Exclusive Economic Zone</value></Data>
@@ -11097,6 +11265,7 @@
 25.378813889649336,33.28006110943272
 25.336152779427266,31.66435277945726</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5685</value></Data>
   <Data name="GEONAME"><value>Maltese Exclusive Economic Zone</value></Data>
@@ -11154,6 +11323,7 @@
 13.75309962274963,34.69647463689512
 13.646328280126198,35.12974329251912</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8354</value></Data>
   <Data name="GEONAME"><value>Omani Exclusive Economic Zone</value></Data>
@@ -11224,6 +11394,7 @@
 56.68333333316721,26.737499999725543
 56.83849770048275,25.649968065191132</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8356</value></Data>
   <Data name="GEONAME"><value>Saudi Arabian Exclusive Economic Zone</value></Data>
@@ -11294,6 +11465,7 @@
 49.52611111153891,28.9349999996506
 49.79000000000059,28.40666666666708</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8346</value></Data>
   <Data name="GEONAME"><value>Sri Lankan Exclusive Economic Zone</value></Data>
@@ -11353,6 +11525,7 @@
 80.10041522967916,6.130719900003413
 80.59495842489164,5.921564340621771</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8373</value></Data>
   <Data name="GEONAME"><value>Syrian Exclusive Economic Zone</value></Data>
@@ -11393,6 +11566,7 @@
 35.162115687289514,36.016388039976164
 35.91810250322854,35.92988884439481</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8392</value></Data>
   <Data name="GEONAME"><value>Togolese Exclusive Economic Zone</value></Data>
@@ -11433,6 +11607,7 @@
 1.6319988900121416,6.235700827086404
 2.4162280556805342,2.969916666221337</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5679</value></Data>
   <Data name="GEONAME"><value>Greek Exclusive Economic Zone</value></Data>
@@ -11546,6 +11721,7 @@
 20.337063432132,38.199116230129846
 20.813164472962455,38.103775500939065</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5697</value></Data>
   <Data name="GEONAME"><value>Turkish Exclusive Economic Zone</value></Data>
@@ -11648,6 +11824,7 @@
 34.21972222222266,43.18805555555582
 36.18250000018358,43.43444444425211</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21790</value></Data>
   <Data name="GEONAME"><value>Monégasque Exclusive Economic Zone</value></Data>
@@ -11682,6 +11859,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8366</value></Data>
   <Data name="GEONAME"><value>Tunisian Exclusive Economic Zone</value></Data>
@@ -11777,6 +11955,7 @@
 13.049722222003311,35.68583333304241
 13.609999999700534,35.249999999800394</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5691</value></Data>
   <Data name="GEONAME"><value>Montenegrin Exclusive Economic Zone</value></Data>
@@ -11817,6 +11996,7 @@
 18.51517331569616,42.4582451578878
 19.38154804750465,41.99553954591343</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5670</value></Data>
   <Data name="GEONAME"><value>Albanian Exclusive Economic Zone</value></Data>
@@ -11861,6 +12041,7 @@
 19.292707920234477,40.41902720953814
 20.008352756275144,39.69182097885536</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5672</value></Data>
   <Data name="GEONAME"><value>Bulgarian Exclusive Economic Zone</value></Data>
@@ -11906,6 +12087,7 @@
 28.5795146224022,43.73847246203471
 31.330820012970065,43.43988565339126</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48953</value></Data>
   <Data name="GEONAME"><value>Palestinian Exclusive Economic Zone</value></Data>
@@ -11945,6 +12127,7 @@
 34.191730493316555,31.789463972767038
 34.47270409814601,31.5726564534192</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8357</value></Data>
   <Data name="GEONAME"><value>Kuwaiti Exclusive Economic Zone</value></Data>
@@ -11987,6 +12170,7 @@
 48.18135845692724,29.528271079346915
 48.154833166317665,30.024583360633663</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8470</value></Data>
   <Data name="GEONAME"><value>Iraqi Exclusive Economic Zone</value></Data>
@@ -12037,6 +12221,7 @@
 48.10241114825595,30.45109376486539
 48.18299808109663,30.390137410812883</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8358</value></Data>
   <Data name="GEONAME"><value>Bahraini Exclusive Economic Zone</value></Data>
@@ -12077,6 +12262,7 @@
 50.387500000125584,26.52999999960062
 51.121893252936815,27.043102973296527</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8468</value></Data>
   <Data name="GEONAME"><value>Qatari Exclusive Economic Zone</value></Data>
@@ -12123,6 +12309,7 @@
 50.81169784088357,24.744459033258323
 50.56452637469292,25.57764749463655</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8353</value></Data>
   <Data name="GEONAME"><value>Yemeni Exclusive Economic Zone</value></Data>
@@ -12187,6 +12374,7 @@
 54.53542613990501,12.542979001979631
 53.54285550158059,12.71363544432053</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8375</value></Data>
   <Data name="GEONAME"><value>Israeli Exclusive Economic Zone</value></Data>
@@ -12238,6 +12426,7 @@
 33.76240312812408,33.53658163802571
 35.10371446635009,33.09411430373206</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8491</value></Data>
   <Data name="GEONAME"><value>Jordanian Exclusive Economic Zone</value></Data>
@@ -12277,6 +12466,7 @@
 34.978064963766286,29.542523200176305
 34.88535215893168,29.375206381339552</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8352</value></Data>
   <Data name="GEONAME"><value>Djiboutian Exclusive Economic Zone</value></Data>
@@ -12319,6 +12509,7 @@
 43.14029374195641,12.71483242634531
 43.27297551271002,12.686389354285467</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8481</value></Data>
   <Data name="GEONAME"><value>Bangladeshi Exclusive Economic Zone</value></Data>
@@ -12413,6 +12604,7 @@
 90.39049661142988,22.088487863924087
 90.62510561972934,22.354563832255337</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8474</value></Data>
   <Data name="GEONAME"><value>Nigerian Exclusive Economic Zone</value></Data>
@@ -12485,6 +12677,7 @@
 5.377757907002092,5.126788854721866
 5.966848254343688,4.346105933242185</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8475</value></Data>
   <Data name="GEONAME"><value>Cameroonian Exclusive Economic Zone</value></Data>
@@ -12532,6 +12725,7 @@
 10.045269012754801,3.351310015145401
 9.882013202147846,2.2323652507557057</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21797</value></Data>
   <Data name="GEONAME"><value>Joint regime area: São Tomé and Principe / Nigeria</value></Data>
@@ -12573,6 +12767,7 @@
 6.949444444406112,3.006666666633393
 7.37716635589004,2.869688473265839</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48976</value></Data>
   <Data name="GEONAME"><value>Joint regime area: France / Italy</value></Data>
@@ -12607,6 +12802,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>22491</value></Data>
   <Data name="GEONAME"><value>Bosnian and Herzegovinian Exclusive Economic Zone</value></Data>
@@ -12641,6 +12837,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48957</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Guam)</value></Data>
@@ -12683,6 +12880,7 @@
 142.0951959460364,15.726687346843676
 148.07709548426934,12.227880121070868</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8318</value></Data>
   <Data name="GEONAME"><value>Marshallese Exclusive Economic Zone</value></Data>
@@ -12751,6 +12949,7 @@
 167.0660801146057,11.452290274376765
 166.83682646926627,11.496124722877937</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48980</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Northern Mariana Islands)</value></Data>
@@ -12797,6 +12996,7 @@
 149.49913003172557,15.610198990491199
 148.07709548426934,12.227880121070868</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8315</value></Data>
   <Data name="GEONAME"><value>Palauan Exclusive Economic Zone</value></Data>
@@ -12846,6 +13046,7 @@
 132.48949030103665,10.81767685120576
 134.66893816906133,11.55937095500559</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8322</value></Data>
   <Data name="GEONAME"><value>Philippine Exclusive Economic Zone</value></Data>
@@ -13041,6 +13242,7 @@
 123.01574301712662,9.038298845315524
 123.24224066757279,9.416454076394587</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48954</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Senkaku Islands: Taiwan / Japan / China</value></Data>
@@ -13082,6 +13284,7 @@
 124.78466057302737,25.36715937200762
 122.87481186187844,25.21519515133528</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8485</value></Data>
   <Data name="GEONAME"><value>Singaporean Exclusive Economic Zone</value></Data>
@@ -13139,6 +13342,7 @@
 103.80571533409545,1.4768639410181095
 103.8401252158061,1.4677750794563735</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8332</value></Data>
   <Data name="GEONAME"><value>Thailand Exclusive Economic Zone</value></Data>
@@ -13206,6 +13410,7 @@
 103.05300480772576,7.789715986004012
 102.09394060387581,6.243460876718132</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8319</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Wake Island / Enenkio: United States / Marshall Islands</value></Data>
@@ -13256,6 +13461,7 @@
 170.1849712259415,19.24891607711544
 169.88415281829847,17.94606149843962</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8484</value></Data>
   <Data name="GEONAME"><value>Vietnamese Exclusive Economic Zone</value></Data>
@@ -13342,6 +13548,7 @@
 106.26012206118472,9.622133970107129
 106.4945796731142,9.82965850823409</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>21796</value></Data>
   <Data name="GEONAME"><value>Joint regime area: South Korea / Japan</value></Data>
@@ -13387,6 +13594,7 @@
 127.63333333346716,28.599999999600414
 126.09193095604903,30.303041329793643</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26521</value></Data>
   <Data name="GEONAME"><value>Bruneian Exclusive Economic Zone</value></Data>
@@ -13435,6 +13643,7 @@
 112.58141167600809,7.587377390254403
 114.40400000000011,5.699999999500449</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8321</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Taiwan: Taiwan / China</value></Data>
@@ -13493,6 +13702,7 @@
 122.00614893462628,25.012256741955213
 121.65130257605327,25.23032784465468</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8328</value></Data>
   <Data name="GEONAME"><value>North Korean Exclusive Economic Zone</value></Data>
@@ -13559,6 +13769,7 @@
 130.3683501478417,42.33698117753951
 133.18004509993463,39.83969111620442</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8331</value></Data>
   <Data name="GEONAME"><value>Cambodian Exclusive Economic Zone</value></Data>
@@ -13604,6 +13815,7 @@
 103.5660542250233,10.538583755635997
 104.44030286025495,10.42168113481857</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8486</value></Data>
   <Data name="GEONAME"><value>Chinese Exclusive Economic Zone</value></Data>
@@ -13799,6 +14011,7 @@
 111.04239022762752,19.642801642382025
 110.68798506296068,20.1623580458874</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5675</value></Data>
   <Data name="GEONAME"><value>Estonian Exclusive Economic Zone</value></Data>
@@ -13859,6 +14072,7 @@
 23.069167375674255,58.8382176161503
 22.578341007431874,59.03665363805516</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5676</value></Data>
   <Data name="GEONAME"><value>Finnish Exclusive Economic Zone</value></Data>
@@ -13935,6 +14149,7 @@
 20.17651092963598,59.970669031250765
 20.11680794453119,60.359954252187066</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5694</value></Data>
   <Data name="GEONAME"><value>Swedish Exclusive Economic Zone</value></Data>
@@ -14073,6 +14288,7 @@
 23.63727724564842,66.31272220606502
 23.915481727399822,66.771956612108</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5684</value></Data>
   <Data name="GEONAME"><value>Lithuanian Exclusive Economic Zone</value></Data>
@@ -14116,6 +14332,7 @@
 20.949809610425234,55.282177225098906
 19.022721715834564,55.93149892003919</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48977</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Sweden / Norway</value></Data>
@@ -14150,6 +14367,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>3293</value></Data>
   <Data name="GEONAME"><value>Belgian Exclusive Economic Zone</value></Data>
@@ -14190,6 +14408,7 @@
 2.5393330553696103,51.87611444429919
 3.3694585561677286,51.36682200413253</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5668</value></Data>
   <Data name="GEONAME"><value>Dutch Exclusive Economic Zone</value></Data>
@@ -14252,6 +14471,7 @@
 3.67862653768492,51.70432710621134
 3.9898376466903755,51.61715841303072</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5669</value></Data>
   <Data name="GEONAME"><value>German Exclusive Economic Zone</value></Data>
@@ -14339,6 +14559,7 @@
 13.758125066718435,54.33925604802823
 13.174713253713833,54.56017220008698</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5674</value></Data>
   <Data name="GEONAME"><value>Danish Exclusive Economic Zone</value></Data>
@@ -14464,6 +14685,7 @@
 14.771627664884818,55.29836547338783
 14.836506962426391,55.04238080942679</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5683</value></Data>
   <Data name="GEONAME"><value>Latvian Exclusive Economic Zone</value></Data>
@@ -14513,6 +14735,7 @@
 21.05769884542542,56.83462250202689
 21.065235256801714,56.06889724691047</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5673</value></Data>
   <Data name="GEONAME"><value>Croatian Exclusive Economic Zone</value></Data>
@@ -14585,6 +14808,7 @@
 16.42852735475367,43.387587546927875
 16.634723901786742,43.25630235716824</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5682</value></Data>
   <Data name="GEONAME"><value>Italian Exclusive Economic Zone</value></Data>
@@ -14752,6 +14976,7 @@
 15.080734014063637,36.64927780632598
 15.525546907963644,38.297492146045954</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5695</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Ukraine: Ukraine / Russia</value></Data>
@@ -14821,6 +15046,7 @@
 36.77135519288808,44.674446906899476
 36.18250000018358,43.43444444425211</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5689</value></Data>
   <Data name="GEONAME"><value>Romanian Exclusive Economic Zone</value></Data>
@@ -14862,6 +15088,7 @@
 28.63095450434713,44.31159484372722
 29.688828707079523,45.203310131657446</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8487</value></Data>
   <Data name="GEONAME"><value>Japanese Exclusive Economic Zone</value></Data>
@@ -15101,6 +15328,7 @@
 127.87981247906342,26.704150080562044
 127.6869006156717,26.08171522617721</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48950</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Kuril Islands: Japan / Russia</value></Data>
@@ -15156,6 +15384,7 @@
 147.899935364326,45.427964568509935
 146.89655005913838,44.51970863384645</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8333</value></Data>
   <Data name="GEONAME"><value>Indian Exclusive Economic Zone (Andaman and Nicobar Islands)</value></Data>
@@ -15209,6 +15438,7 @@
 92.71258616412027,11.487348318170348
 92.78096854676144,11.896945118722314</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8359</value></Data>
   <Data name="GEONAME"><value>Pakistani Exclusive Economic Zone</value></Data>
@@ -15273,6 +15503,7 @@
 68.75805473323936,24.05036497156733
 68.60352351446645,23.97069820803003</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26523</value></Data>
   <Data name="GEONAME"><value>Turkmen Exclusive Economic Zone</value></Data>
@@ -15323,6 +15554,7 @@
 51.93301543501448,37.989455196000904
 51.37653418490518,38.58909855245628</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26524</value></Data>
   <Data name="GEONAME"><value>Azerbaijani Exclusive Economic Zone</value></Data>
@@ -15370,6 +15602,7 @@
 49.91508785071514,42.60552261177915
 51.456650171568384,41.222766743690414</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26522</value></Data>
   <Data name="GEONAME"><value>Kazakh Exclusive Economic Zone</value></Data>
@@ -15433,6 +15666,7 @@
 52.744073271564645,42.72370207339216
 52.44563567604578,41.76313495671323</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8482</value></Data>
   <Data name="GEONAME"><value>Myanma Exclusive Economic Zone</value></Data>
@@ -15531,6 +15765,7 @@
 93.49897587303875,19.42463457572542
 93.8349182609692,18.930215954602815</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5687</value></Data>
   <Data name="GEONAME"><value>Polish Exclusive Economic Zone</value></Data>
@@ -15592,6 +15827,7 @@
 14.767468332797307,54.022737741053874
 14.535511731880916,53.969722151556056</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8480</value></Data>
   <Data name="GEONAME"><value>Indian Exclusive Economic Zone</value></Data>
@@ -15732,6 +15968,7 @@
 81.7502267356754,16.929292201973624
 81.87182676749146,16.60253787082621</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>26582</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Halaib Triangle: Sudan / Egypt</value></Data>
@@ -15773,6 +16010,7 @@
 35.61351072823814,23.15433025333877
 37.25764291119194,23.191662387609455</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8393</value></Data>
   <Data name="GEONAME"><value>Beninese Exclusive Economic Zone</value></Data>
@@ -15817,6 +16055,7 @@
 1.6319988900121416,6.235700827086404
 2.716406345676802,6.459666013875562</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5692</value></Data>
   <Data name="GEONAME"><value>Slovenian Exclusive Economic Zone</value></Data>
@@ -15856,6 +16095,7 @@
 13.712500000000318,45.59833333333364
 13.452138890000185,45.53958333000014</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8483</value></Data>
   <Data name="GEONAME"><value>Malaysian Exclusive Economic Zone</value></Data>
@@ -15997,6 +16237,7 @@
 119.00472952264943,4.593449074615137
 119.92611111113888,3.1113888886862924</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>49003</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: South China Sea</value></Data>
@@ -16045,6 +16286,7 @@
 114.27427156488866,18.225772474552542
 116.45730316211134,17.299310104535394</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>50167</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Croatia / Slovenia</value></Data>
@@ -16079,6 +16321,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8327</value></Data>
   <Data name="GEONAME"><value>South Korean Exclusive Economic Zone</value></Data>
@@ -16165,6 +16408,7 @@
 126.83017742604787,33.30549824195052
 126.76108145744391,33.562307477208435</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48955</value></Data>
   <Data name="GEONAME"><value>Overlapping claim Liancourt Rocks: Japan / South Korea</value></Data>
@@ -16204,6 +16448,7 @@
 132.11894618930071,37.27424592611371
 131.8765485448727,37.03717408188865</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>50170</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Qatar / Saudi Arabia / United Arab Emirates</value></Data>
@@ -16238,6 +16483,7 @@
   <Data name="UN_TER3"><value>784</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8455</value></Data>
   <Data name="GEONAME"><value>New Zealand Exclusive Economic Zone</value></Data>
@@ -16422,6 +16668,7 @@
 -176.20744204491442,-43.72699153403204
 -176.63006341459487,-43.701687216991445</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8442</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Jarvis Islands)</value></Data>
@@ -16466,6 +16713,7 @@
 -156.99744444420566,-1.5153888890857985
 -158.31855287181725,-3.286792815935371</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8326</value></Data>
   <Data name="GEONAME"><value>Tuvaluan Exclusive Economic Zone</value></Data>
@@ -16525,6 +16773,7 @@
 179.923283333333,-3.96556388888877
 180,-12.9380141321904</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8454</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone (Wallis and Futuna)</value></Data>
@@ -16571,6 +16820,7 @@
 -179.2454017111111,-14.792461572545472
 -179.81971677439023,-12.820507703401365</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8451</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Howland and Baker Islands)</value></Data>
@@ -16617,6 +16867,7 @@
 -173.67734442099987,2.392051809000023
 -173.14298275041847,0.26524746882104466</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8325</value></Data>
   <Data name="GEONAME"><value>Fijian Exclusive Economic Zone</value></Data>
@@ -16686,6 +16937,7 @@
 178.650245309075,-18.0933507677235
 178.25519204158,-17.3813873532438</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8464</value></Data>
   <Data name="GEONAME"><value>Brazilian Exclusive Economic Zone</value></Data>
@@ -16903,6 +17155,7 @@
 -51.94974577464754,-1.427655816462746
 -51.47972011559065,-1.2288266424354788</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8441</value></Data>
   <Data name="GEONAME"><value>Kiribati Exclusive Economic Zone (Line Group)</value></Data>
@@ -16967,6 +17220,7 @@
 -146.93829722233883,-9.052275000390821
 -147.03249092471617,-11.156159784146382</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8488</value></Data>
   <Data name="GEONAME"><value>Kiribati Exclusive Economic Zone (Gilbert Islands)</value></Data>
@@ -17019,6 +17273,7 @@
 180,-1.58287039833245
 179.923283333333,-3.96556388888877</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8403</value></Data>
   <Data name="GEONAME"><value>Ecuadorian Exclusive Economic Zone (Galapagos)</value></Data>
@@ -17083,6 +17338,7 @@
 -90.78101980651869,-0.7649750711425582
 -91.34516835173787,0.16650974762676185</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8431</value></Data>
   <Data name="GEONAME"><value>Ecuadorian Exclusive Economic Zone</value></Data>
@@ -17142,6 +17398,7 @@
 -79.89969456175447,-2.7447190287601586
 -80.21926140768753,-2.768009543405583</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8397</value></Data>
   <Data name="GEONAME"><value>São Toméan Exclusive Economic Zone</value></Data>
@@ -17185,6 +17442,7 @@
 8.550138888698939,2.067111111488586
 8.201279308000267,0.6170237740263502</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8316</value></Data>
   <Data name="GEONAME"><value>Micronesian Exclusive Economic Zone</value></Data>
@@ -17276,6 +17534,7 @@
 153.58378348222186,5.582874541826641
 153.57103892780435,5.568503900734413</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8398</value></Data>
   <Data name="GEONAME"><value>Equatorial Guinean Exclusive Economic Zone</value></Data>
@@ -17339,6 +17598,7 @@
 8.938500642590725,3.6658216711333864
 8.677728772265368,3.746837258632638</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8345</value></Data>
   <Data name="GEONAME"><value>Maldivian Exclusive Economic Zone</value></Data>
@@ -17386,6 +17646,7 @@
 76.64269212144444,-1.227648725708077
 75.21741056454606,-3.3488998750291454</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8324</value></Data>
   <Data name="GEONAME"><value>Papua New Guinean Exclusive Economic Zone</value></Data>
@@ -17640,6 +17901,7 @@
 153.7755223508758,-11.613384246785529
 153.40174996848623,-11.418904543110159</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8350</value></Data>
   <Data name="GEONAME"><value>Somali Exclusive Economic Zone</value></Data>
@@ -17700,6 +17962,7 @@
 51.004556289940865,13.524636939243408
 51.65158545830229,12.076262129493728</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8317</value></Data>
   <Data name="GEONAME"><value>Nauruan Exclusive Economic Zone</value></Data>
@@ -17746,6 +18009,7 @@
 168.55985822218426,1.7788404631800034
 168.29038611111125,-0.2953611111109353</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8476</value></Data>
   <Data name="GEONAME"><value>Gabonese Exclusive Economic Zone</value></Data>
@@ -17804,6 +18068,7 @@
 8.86422741456363,-1.0230984686192528
 8.99693524816334,-1.2659887077126086</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8492</value></Data>
   <Data name="GEONAME"><value>Indonesian Exclusive Economic Zone</value></Data>
@@ -18364,6 +18629,7 @@
 102.00263261820083,1.602511525486534
 102.32059144933595,1.4028021094298424</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>48978</value></Data>
   <Data name="GEONAME"><value>Joint regime area: United States / Russia</value></Data>
@@ -18418,6 +18684,7 @@
 -168.97694444444446,73.35432197827078
 -168.403261168984,72.9424088819834</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5677</value></Data>
   <Data name="GEONAME"><value>French Exclusive Economic Zone</value></Data>
@@ -18549,6 +18816,7 @@
 -2.6259830000736315,49.84509629989526
 -2.935636099942883,49.303914000118084</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8378</value></Data>
   <Data name="GEONAME"><value>Algerian Exclusive Economic Zone</value></Data>
@@ -18598,6 +18866,7 @@
 7.060117028978084,38.30151314891299
 7.816666666711427,38.01000000026676</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8400</value></Data>
   <Data name="GEONAME"><value>Ghanaian Exclusive Economic Zone</value></Data>
@@ -18643,6 +18912,7 @@
 0.760357022059253,5.770705819318209
 1.1995075289496526,6.111992139825745</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8438</value></Data>
   <Data name="GEONAME"><value>Danish Exclusive Economic Zone (Greenland)</value></Data>
@@ -19318,6 +19588,7 @@
 -72.5148354770754,77.41103744522212
 -71.88503324968474,77.30755424523232</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5696</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone</value></Data>
@@ -19523,6 +19794,7 @@
 -2.702396750709056,58.96397781372565
 -3.0875022411353257,59.01947474516356</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8453</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Hawaii)</value></Data>
@@ -19617,6 +19889,7 @@
 -155.27931404141,20.0189435486059
 -155.83545255629,20.0427664520101</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>33181</value></Data>
   <Data name="GEONAME"><value>Norwegian Exclusive Economic Zone (Svalbard)</value></Data>
@@ -19780,6 +20053,7 @@
 17.7345682386333,80.1308835744174
 18.80031836030406,79.97279703635411</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5686</value></Data>
   <Data name="GEONAME"><value>Norwegian Exclusive Economic Zone</value></Data>
@@ -20045,6 +20319,7 @@
 26.226010680449065,71.04336333265172
 25.535070538474884,71.14823627478432</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5690</value></Data>
   <Data name="GEONAME"><value>Russian Exclusive Economic Zone</value></Data>
@@ -21571,6 +21846,7 @@
 169.45770311380784,69.80615985419394
 168.530351400197,70.02662050683091</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8437</value></Data>
   <Data name="GEONAME"><value>Norwegian Exclusive Economic Zone (Jan Mayen)</value></Data>
@@ -21620,6 +21896,7 @@
 -0.4122259720505781,68.94321763858346
 -6.631999948838143,67.61186853100801</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8463</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone (Alaska)</value></Data>
@@ -22118,6 +22395,7 @@
 -178.225601553668,51.8802802559296
 -177.957489967188,51.6169865130175</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>5693</value></Data>
   <Data name="GEONAME"><value>Spanish Exclusive Economic Zone</value></Data>
@@ -22231,6 +22509,7 @@
 -3.172222222477359,44.86666666643387
 -1.9249999996499696,43.7291666669085</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>62589</value></Data>
   <Data name="GEONAME"><value>Mauritian Exclusive Economic Zone (Chagos Archipelago)</value></Data>
@@ -22277,6 +22556,7 @@
 68.72559644871714,-3.828295976977616
 70.19641281669831,-2.2885374532408154</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8383</value></Data>
   <Data name="GEONAME"><value>Overlapping claim South Georgia and the South Sandwich Islands: United Kingdom / Argentina</value></Data>
@@ -22345,6 +22625,7 @@
 -36.49065268027687,-54.18267095130332
 -37.71720027886968,-53.97628653049887</coordinates></LinearRing></innerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8402</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Bermuda)</value></Data>
@@ -22397,6 +22678,7 @@
 -61.00987160029412,33.7608803003857
 -60.704988099621104,32.39114399999593</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8456</value></Data>
   <Data name="GEONAME"><value>United States Exclusive Economic Zone</value></Data>
@@ -22733,6 +23015,7 @@
 -122.38213455646428,47.90464854229697
 -122.5861927270123,48.386316418967965</coordinates></LinearRing></innerBoundaryIs></Polygon></MultiGeometry></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>8355</value></Data>
   <Data name="GEONAME"><value>Sudanese Exclusive Economic Zone</value></Data>
@@ -22779,6 +23062,7 @@
 36.88085362281535,22.00000000000216
 36.88970751741218,21.988549718141797</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64446</value></Data>
   <Data name="GEONAME"><value>British Exclusive Economic Zone (Isle of Man)</value></Data>
@@ -22819,6 +23103,7 @@
 -4.474055900281706,53.873383099874104
 -5.177459399902565,54.037248099882326</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64460</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Iraq / Iran</value></Data>
@@ -22853,6 +23138,7 @@
   <Data name="UN_TER3"><value>null</value></Data></ExtendedData>
   </Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64430</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Egypt / Libya</value></Data>
@@ -22893,6 +23179,7 @@
 26.22503631627302,33.27343967100404
 25.336152779427266,31.66435277945726</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64431</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Belize / Honduras</value></Data>
@@ -22932,6 +23219,7 @@
 -88.42483731928684,16.11224968207722
 -88.0506811053487,16.23053213824761</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64459</value></Data>
   <Data name="GEONAME"><value>Joint regime area: Norway / Russia</value></Data>
@@ -22971,6 +23259,7 @@
 36.47861586933266,73.38579158683297
 39.588553108418864,72.3101758640612</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
+    <styleUrl>#eezStyle</styleUrl>
 <ExtendedData>
   <Data name="MRGID"><value>64440</value></Data>
   <Data name="GEONAME"><value>Overlapping claim: Malaysia / Singapore</value></Data>

@@ -6,7 +6,7 @@
         <width>1.5</width> <!-- Ancho de la línea del borde -->
       </LineStyle>
       <PolyStyle>
-        <color>9900A5FF</color> <!-- Color de relleno en formato ABGR -->
+        <color>8000A5FF</color> <!-- Color de relleno en formato ABGR -->
         <fill>true</fill>
         <outline>true</outline>
       </PolyStyle>

@@ -8565,52 +8565,6 @@
 125.925,30.77</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
-<name>Kiribati</name><ExtendedData>
-  <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
-  <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
-  <Data name="fill"><value>#3C78D2</value></Data>
-  <Data name="stroke-opacity"><value>0.39215686274509803</value></Data>
-  <Data name="stroke"><value>#3C78D2</value></Data>
-  <Data name="stroke-width"><value>1.5</value></Data></ExtendedData>
-  <Polygon>
-<outerBoundaryIs>
-  <LinearRing><coordinates>-180,-3.7427882979
--180,-1.6084147076
--179.8195623416,-2.6601077777
--180,-3.7427882979</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
-<Placemark>
-    <styleUrl>#eezStyle</styleUrl>
-<name>Kiribati</name><ExtendedData>
-  <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
-  <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
-  <Data name="fill"><value>#3C78D2</value></Data>
-  <Data name="stroke-opacity"><value>0.39215686274509803</value></Data>
-  <Data name="stroke"><value>#3C78D2</value></Data>
-  <Data name="stroke-width"><value>1.5</value></Data></ExtendedData>
-  <Polygon>
-<outerBoundaryIs>
-  <LinearRing><coordinates>167.8158321522,-3.753244807000001
-168.5981051529,1.7702803231
-170.0551755293,1.9896129483
-170.81789178,4.1975795754
-172.4786636565,4.5870594507
-175.4844692843,5.5693580766
-176.1360434099,4.4974590756
-176.6149230354,2.3769014487
-179.0067864126,0.8165961972
-179.6252646632,-0.2480715538
-180,-1.60841468
-179.8922219134,-4.0026695573
-177.316238411,-4.3563143076
-176.14522791,-4.0754560573
-173.0848787821,-4.1687473074
-171.9991624061,-3.1484719315
-171.2131752804,-3.7924850571
-170.1254402793,-4.1885783074
-168.9665415283,-4.1887155574
-167.8158321522,-3.753244807000001</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
-<Placemark>
-    <styleUrl>#eezStyle</styleUrl>
 <name>Antarctica</name><ExtendedData>
   <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
   <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
@@ -13830,16 +13784,6 @@
   </Placemark>
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
-<name>Line Group (Kiribati)</name><ExtendedData>
-  <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
-  <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
-  <Data name="fill"><value>#3C78D2</value></Data>
-  <Data name="stroke-opacity"><value>0.39215686274509803</value></Data>
-  <Data name="stroke"><value>#3C78D2</value></Data>
-  <Data name="stroke-width"><value>1.5</value></Data></ExtendedData>
-  </Placemark>
-<Placemark>
-    <styleUrl>#eezStyle</styleUrl>
 <name>Jarvis Island (United States)</name><ExtendedData>
   <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
   <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
@@ -13920,7 +13864,7 @@
   </Placemark>
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
-<name>Phoenix Group (Kiribati)</name><ExtendedData>
+<name>Phoenix Group ()</name><ExtendedData>
   <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
   <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
   <Data name="fill"><value>#3C78D2</value></Data>
@@ -14540,7 +14484,7 @@
   </Placemark>
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
-<name>Kiribati</name><ExtendedData>
+<name></name><ExtendedData>
   <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
   <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
   <Data name="fill"><value>#3C78D2</value></Data>
@@ -14548,16 +14492,7 @@
   <Data name="stroke"><value>#3C78D2</value></Data>
   <Data name="stroke-width"><value>1.5</value></Data></ExtendedData>
   </Placemark>
-<Placemark>
-    <styleUrl>#eezStyle</styleUrl>
-<name>Kiribati</name><ExtendedData>
-  <Data name="styleUrl"><value>#sn_ylw-pushpin</value></Data>
-  <Data name="fill-opacity"><value>0.23529411764705882</value></Data>
-  <Data name="fill"><value>#3C78D2</value></Data>
-  <Data name="stroke-opacity"><value>0.39215686274509803</value></Data>
-  <Data name="stroke"><value>#3C78D2</value></Data>
-  <Data name="stroke-width"><value>1.5</value></Data></ExtendedData>
-  </Placemark>
+
 <Placemark>
     <styleUrl>#eezStyle</styleUrl>
 <name>Antarctica</name><ExtendedData>
